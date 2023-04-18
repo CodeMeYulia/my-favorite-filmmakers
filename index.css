@@ -1,0 +1,57 @@
+.main__container{
+background-color: rgb(164, 154, 167);
+width: 600px;
+min-height: 800px;
+text-align: center;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.main__title{
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+padding: 30px;
+}
+
+.main__f-maker{
+    border: 1px dashed black;
+    min-height: 550px;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    }
+
+.main__f-maker_item_borderline{
+    border-color: black;
+    
+}
+
+.main__f-maker_name{
+    font-size: 24px;
+    font-weight: 600;
+    display: flex;
+    justify-self: start;
+}
+
+.main__f-maker_aboutblock{
+    border: 1px dashed green;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main__f-maker_about{
+    font-family: 'Franklin Gothic light', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    color: white;
+    font-weight: 200;
+    padding-left: 30px;
+}
+
+a{
+color: black;
+font-weight: 600;
+}
+
+.topFilmsList{
+font-weight: 600;
+padding: 0 30px 30px 30px;
+}
