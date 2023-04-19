@@ -26,7 +26,6 @@ padding: 30px;
 
 .main__f-maker_name{
     font-size: 24px;
-    font-weight: 600;
     display: flex;
     justify-self: start;
 }
@@ -42,8 +41,7 @@ padding: 30px;
     font-family: 'Franklin Gothic light', 'Arial Narrow', Arial, sans-serif;
     font-size: 14px;
     color: white;
-    font-weight: 200;
-    padding-left: 30px;
+    padding-left: 10px;
 }
 
 a{
@@ -54,4 +52,5 @@ font-weight: 600;
 .topFilmsList{
 font-weight: 600;
 padding: 0 30px 30px 30px;
+color: rgb(59, 59, 59);
 }
