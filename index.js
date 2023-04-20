@@ -1,8 +1,12 @@
+// debugger;
+
 const fmakeritem = document.querySelector('.main__f-maker_text');
 const nameMaker = document.querySelector('.main__f-maker_name');
 const aboutMaker = document.querySelector('.main__f-maker_about');
 const filmsMaker = document.querySelector('.main__f-maker_films');
-
+const topfilms = document.querySelector('.topFilms');
+let item = '';
+let topR = '';
 
 const filmmakers = [
     {
@@ -47,15 +51,39 @@ const filmmakers = [
       films: 'https://www.film.ru/person/zhan-mark-valle',
       top_rated_film: 'Далласский клуб покупателей'
     },
-  ];
+];
 
-    nameMaker.innerHTML = `<div class="main__f-maker_name">1. ${filmmakers[0].name}</div>`;
-    aboutMaker.innerHTML = `<p class="main__f-maker_about">${filmmakers[0].career}</p>`;
-    filmsMaker.innerHTML = `<p class="main__f-maker_films">
-    <a href="${filmmakers[0].films}" target="_blank">фильмография</a>
-</p>`;
+let indexName = filmmakers.findIndex (el => el.name); //получаем индекс элемента
 
-// filmmakers.forEach (function (person){
-//     console.log(person + '.');
-// }
-// );
+while (indexName < 8) {
+  let numfm = `${indexName + 1}`; //получаем порядковый номер
+  console.log(numfm, indexName);
+  item = item + 
+  `<div class="main__f-maker_item">
+                <hr class="main__f-maker_item_borderline">
+                <div class="main__f-maker_text">
+                <div class="main__f-maker_name">${numfm}. ${filmmakers[indexName].name}</div>
+                    <div class="main__f-maker_aboutblock">
+                    <p class="main__f-maker_about">${filmmakers[indexName].career}</p>
+                    <p class="main__f-maker_films"><a href="${filmmakers[indexName].films}" target="_blank">фильмография</a></p>
+                    </div>
+                </div>
+            </div>`;
+fmakeritem.innerHTML = item;
+
+topR = topR + `<p class="topFilms">${filmmakers[indexName].top_rated_film}, </p>`;
+topfilms.innerHTML = topR;
+
+indexName++;
+};
+
+
+
+
+
+// messageline = messageline + `<div class="avatar">${avatar.innerHTML}</div>
+// <div class="timecode">${timecode.textContent}</div>
+// <div class="nickname">${nickname.textContent}</div>
+// <div class="message">${message.textContent}</div>`;
+// chatWindow.innerHTML = messageline;
+// ${top_rated_film},
