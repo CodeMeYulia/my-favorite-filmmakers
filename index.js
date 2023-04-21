@@ -53,9 +53,10 @@ const filmmakers = [
 
 let indexName = filmmakers.findIndex (el => el.name); //получаем индекс элемента
 
-while (indexName < 7) {
-  let numfm = `${indexName + 1}`; //получаем порядковый номер
+while (indexName < 7) { //цикл подстановки значений массива
+  let numfm = `${indexName + 1}`; //получаем порядковый номер для каждого блока
   console.log(numfm, indexName);
+  //заполняем блоки по режиссерам
   item = item + 
   `<div class="main__f-maker_item">
                 <hr class="main__f-maker_item_borderline">
@@ -70,6 +71,7 @@ while (indexName < 7) {
 fmakeritem.innerHTML = item;
 console.log(filmmakers.length);
 
+//в блоке топовых фильмов вставляем значения и убираем последнюю запятую
 if (indexName === filmmakers.length - 1) {
   topR = topR + `<p class="topFilms">${filmmakers[indexName].top_rated_film}</p>`;
 } else {
@@ -79,12 +81,3 @@ if (indexName === filmmakers.length - 1) {
 topfilms.innerHTML = topR;
 indexName++;
 };
-
-
-
-
-let num = 8;
-while (num) {
-    console.log(num);
-    num--;
-}
