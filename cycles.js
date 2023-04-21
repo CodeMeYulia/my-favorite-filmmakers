@@ -33,3 +33,20 @@ while (num) {
     console.log(num);
     num--;
 }
+
+
+// alert(Array.from(new Set([1, 2, 1, 2, 3, 4, 5, 2, 4, 1, 1, 6]))); 
+
+// const arr1 = [1, 2];
+// const arr2 = [2, 3];
+// const arr3 = ['a', 'b'];
+// const arr4 = ['b', 'c'];
+// const arr5 = ['b', 'e', 'c'];
+// const arr6 = ['b', 'b', 'e'];
+// const arr7 = ['b', 'c', 'e'];
+// const arr8 = ['b', 'e', 'c'];
+// console.log(intersection(arr1, arr2)) // [2]
+// console.log(intersection(arr3, arr4, arr5)) // ['b']
+// console.log(intersection(arr6, arr7, arr8)) // ['b', 'e']
+
+// alert(Array.from(new Set([1, 2], [2, 3], ['a', 'b'], ['b', 'c'], ['b', 'e', 'c'], ['b', 'b', 'e'], ['b', 'c', 'e'], ['b', 'e', 'c'])));
