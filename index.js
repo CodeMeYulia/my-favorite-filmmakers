@@ -53,7 +53,7 @@ const filmmakers = [
 
 let indexName = filmmakers.findIndex (el => el.name); //получаем индекс элемента
 
-while (indexName < 8) {
+while (indexName < 7) {
   let numfm = `${indexName + 1}`; //получаем порядковый номер
   console.log(numfm, indexName);
   item = item + 
@@ -79,3 +79,12 @@ if (indexName === filmmakers.length - 1) {
 topfilms.innerHTML = topR;
 indexName++;
 };
+
+
+
+
+let num = 8;
+while (num) {
+    console.log(num);
+    num--;
+}
