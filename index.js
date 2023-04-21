@@ -1,5 +1,3 @@
-// debugger;
-
 const fmakeritem = document.querySelector('.main__f-maker_text');
 const nameMaker = document.querySelector('.main__f-maker_name');
 const aboutMaker = document.querySelector('.main__f-maker_about');
@@ -70,20 +68,14 @@ while (indexName < 8) {
                 </div>
             </div>`;
 fmakeritem.innerHTML = item;
+console.log(filmmakers.length);
 
-topR = topR + `<p class="topFilms">${filmmakers[indexName].top_rated_film}, </p>`;
-topfilms.innerHTML = topR;
-
-indexName++;
+if (indexName === filmmakers.length - 1) {
+  topR = topR + `<p class="topFilms">${filmmakers[indexName].top_rated_film}</p>`;
+} else {
+  topR = topR + `<p class="topFilms">${filmmakers[indexName].top_rated_film}, </p>`;
 };
 
-
-
-
-
-// messageline = messageline + `<div class="avatar">${avatar.innerHTML}</div>
-// <div class="timecode">${timecode.textContent}</div>
-// <div class="nickname">${nickname.textContent}</div>
-// <div class="message">${message.textContent}</div>`;
-// chatWindow.innerHTML = messageline;
-// ${top_rated_film},
+topfilms.innerHTML = topR;
+indexName++;
+};

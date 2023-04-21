@@ -9,6 +9,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 .main__title{
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 padding: 30px 30px 0 30px;
+font-size: 27px;
 }
 
 .main__f-maker{
@@ -41,9 +42,8 @@ padding: 30px 30px 0 30px;
     font-family: 'Franklin Gothic light', 'Arial Narrow', Arial, sans-serif;
     font-size: 14px;
     color: white;
-    padding-left: 10px;
-    /* line-height: 0px; */
-
+    text-align: start;
+    padding-left: 25px;
 }
 
 a{
@@ -55,13 +55,16 @@ font-weight: 600;
 font-weight: 600;
 padding:10px 30px 20px 30px;
 color: rgb(59, 59, 59);
+display: block;
+/* justify-content: start; */
 }
 
 .topFilms{
     display: flex;
     flex-wrap: wrap;
-    font-size: 18px;
+    font-size: 1rem;
     color: black;
     line-height: 0px;
     padding: 0 2px;
+    hyphens: auto;
 }
