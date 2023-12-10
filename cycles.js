@@ -28,11 +28,11 @@ while (num < 5) {
 //   topfilms.innerHTML = topR;
 //   console.log(filmmakers.length);
 
-let num = 8;
-while (num) {
-    console.log(num);
-    num--;
-}
+// let num = 8;
+// while (num) {
+//     console.log(num);
+//     num--;
+// }
 
 
 // alert(Array.from(new Set([1, 2, 1, 2, 3, 4, 5, 2, 4, 1, 1, 6]))); 
@@ -50,3 +50,20 @@ while (num) {
 // console.log(intersection(arr6, arr7, arr8)) // ['b', 'e']
 
 // alert(Array.from(new Set([1, 2], [2, 3], ['a', 'b'], ['b', 'c'], ['b', 'e', 'c'], ['b', 'b', 'e'], ['b', 'c', 'e'], ['b', 'e', 'c'])));
+
+
+//UNIQ
+// const array = ['Alex', 'Julia', 'Mark', ' Melissa', 'Julia'];
+// const uniqArray = [...new Set(array)];
+// console.log(uniqArray);
+
+// const array = ['Alex', 'Julia', 'Mark', ' Melissa', 'Julia'];
+// const uniqArray = array from (new Set(array));
+// console.log(uniqArray);
+
+
+const array = [1,2,3,4];
+const uniqArray = array.filter((item, index) =>{
+    return index === array.indexOf(item);
+}) 
+console.log(uniqArray);

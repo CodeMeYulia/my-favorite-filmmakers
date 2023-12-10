@@ -55,7 +55,7 @@
 
 // while (indexName < 7) { //цикл подстановки значений массива
 //   let numfm = `${indexName + 1}`; //получаем порядковый номер для каждого блока
-//   console.log(numfm, indexName);
+
 //   //заполняем блоки по режиссерам
 //   item = item + 
 //   `<div class="main__f-maker_item">
@@ -69,7 +69,6 @@
 //                 </div>
 //             </div>`;
 // fmakeritem.innerHTML = item;
-// console.log(filmmakers.length);
 
 // //в блоке топовых фильмов вставляем значения и убираем последнюю запятую
 // if (indexName === filmmakers.length - 1) {
@@ -81,9 +80,6 @@
 // topfilms.innerHTML = topR;
 // indexName++;
 // };
-
-
-
 
 //forEach metod
 
@@ -146,23 +142,21 @@ const filmmakers = [
 let indexName = filmmakers.findIndex (el => el.name); //получаем индекс элемента
 
 filmmakers.forEach(function(el) {
-  console.log('go');
   let numfm = `${indexName + 1}`; //получаем порядковый номер для каждого блока
-  console.log(numfm, indexName);
+
   //заполняем блоки по режиссерам
   item = item + 
   `<div class="main__f-maker_item">
-                <hr class="main__f-maker_item_borderline">
-                <div class="main__f-maker_text">
-                <div class="main__f-maker_name">${numfm}. ${filmmakers[indexName].name}</div>
-                    <div class="main__f-maker_aboutblock">
-                    <p class="main__f-maker_about">${filmmakers[indexName].career}</p>
-                    <p class="main__f-maker_films"><a href="${filmmakers[indexName].films}" target="_blank">фильмография</a></p>
-                    </div>
-                </div>
-            </div>`;
+    <hr class="main__f-maker_item_borderline">
+    <div class="main__f-maker_text">
+      <div class="main__f-maker_name">${numfm}. ${filmmakers[indexName].name}</div>
+      <div class="main__f-maker_aboutblock">
+        <p class="main__f-maker_about">${filmmakers[indexName].career}</p>
+        <p class="main__f-maker_films"><a href="${filmmakers[indexName].films}" target="_blank">фильмография</a></p>
+      </div>
+    </div>
+  </div>`;
 fmakeritem.innerHTML = item;
-console.log(filmmakers.length);
 
 //в блоке топовых фильмов вставляем значения и убираем последнюю запятую
 if (indexName === filmmakers.length - 1) {
@@ -173,3 +167,5 @@ if (indexName === filmmakers.length - 1) {
 topfilms.innerHTML = topR;
 indexName++;
 });
+
+
